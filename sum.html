@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>小组介绍</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            height: 1000px;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        /* 小组 */
+        
+        .long {
+            width: 1200px;
+            text-align: center;
+            margin-bottom: 100px;
+            /* background-color: skyblue; */
+            opacity: .5;
+            font-family: STKaiti;
+        }
+        
+        .box {
+            float: left;
+            /* margin-: ; */
+            position: relative;
+            width: 300px;
+            height: 300px;
+            /* margin: 100px auto; */
+            /* padding: 100px 0; */
+            transition: all .3s;
+            /* 添加透视 */
+            perspective: 500px;
+            transform-style: preserve-3d;
+        }
+        
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+        
+        .front,
+        .black {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+        }
+        
+        .front {
+            /* width: 100%;
+            height: 100%; */
+            background-color: pink;
+            z-index: 99;
+            /* margin: 100px; */
+            padding-top: 130px;
+        }
+        
+        .box1 {
+            margin: 0 100px;
+        }
+        
+        .bfa {
+            background-color: #bfa;
+        }
+        
+        .black {
+            background-color: skyblue;
+            /* 像手机 背靠背 旋转 */
+            transform: rotateY(180deg);
+            padding-top: 50px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .front:hover {
+            transform: translateY(180deg);
+            /* animation: run 5s 2 alternate;
+            display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father w">
+        <div class="long">
+            <h1>小组介绍</h1>
+        </div>
+        <ul class="er w">
+            <li class="box w">
+                <h1 class="front w">吴俊澎</h1>
+                <p class="black  w">大家好! <br> 我叫吴俊澎<br/>是19软件51的一员<br/>性格温和，带入和善，希望可以和工作室的朋友一起愉快的学习
+                    <br>撸起柚子，加油干!
+                </p>
+            </li>
+            <li class="box box1 w">
+                <h1 class="front  w">胡峻杰</h1>
+                <p class="black bfa w">
+                    大家好！
+                    <br> 我叫胡峻杰<br/>来自19软件51<br/>是一个闷骚而又活泼的一个男孩。
+                    <br> 很高兴来到工作室，与大家一起学习，fighting!
+                </p>
+            </li>
+            <li class="box w">
+                <h1 class="front w">孟子杰</h1>
+                <p class="black w">
+                    大家好！<br> 我叫孟子杰<br/>来自19软件51<br/>性格和善，为人挺好的，希望在工作室的时间里可以和大家成为好朋友!<br/>冲冲冲!
+                </p>
+            </li>
+
+        </ul>
+        <!-- <div class="box1 w">
+            <a href="#">欢迎光临！</a>
+        </div> -->
+    </div>
+</body>
+
+</html>
